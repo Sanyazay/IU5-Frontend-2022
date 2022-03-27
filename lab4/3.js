@@ -8,7 +8,24 @@
  */
 
 function rle(str) {
-    //code here
+    const subres = new Array()
+    let arr = new Array()
+    arr.push(str[0])
+    for(let i = 1;i < str.length;i++){
+
+        let current = str[i]
+        if(arr.includes(current)){
+                arr.push(current)
+        }else{
+            subres.push(arr.join(''))
+            arr = []
+            arr.push(current)
+        }
+
+
+    }
+    subres.push(arr.join(''))
+    return subres.map((x)=> x.length > 1 ? x[0]+x.length : x).join('')
 }
 
 module.exports = rle;
