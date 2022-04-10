@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 59, 59);
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(./FiraSans-Heavy.otf);
+}
+.headWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimage {
+    width: 75px;
+    height: 75px;
+}
+.searchwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchCL {
+    width: 55vw;
+    height: 30px;
+    border: 3px solid #b4b4b4;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.searchCL:focus {
+    outline: none;
+}
+.searchbutton {
+    height: 30px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    border: 3px solid #969292;
+    border-radius: 10px;
+}
+.mainWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.weathercard {
+    width: 60vw;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 6px solid #b4b4b4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.maintextCL {
+    width: fit-content;
+    font-size: 80px;
+    padding-left: 10px;
+}
+.secondwrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.temperatureCL {
+    margin-left: 20px;
+    font-size: 65px;
+}
+.weatherCL {
+    margin-left: 20px;
+    font-size: 65px;
+}
+#weathericon {
+    margin-left: 20px;
+    background-image: url("./icons/icons8-clouds-96.png");
+    width: 96px;
+    height: 96px;
+}
+.thirdwrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.windwrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.windicon {
+    margin-left: 20px;
+    background-image: url("./icons/windicon1.png");
+    width: 32px;
+    height: 32px;
+}
+#wind {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.humiditywrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.humidityicon {
+    margin-left: 20px;
+    background-image: url("./icons/humidityicon1.png");
+    width: 32px;
+    height: 32px;
+}
+#humidity {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.pressurewrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pressureicon {
+    margin-left: 20px;
+    background-image: url("./icons/pressureicon1.png");
+    width: 32px;
+    height: 32px;
+}
+#pressure {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.fourthwrap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.subwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.subwrap1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#date1,
+#date2,
+#date3 {
+    font-size: 30px;
+    width: fit-content;
+}
+#temperature1,
+#temperature2,
+#temperature3 {
+    font-size: 30px;
+}
+#weather1,
+#weather2,
+#weather3 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+#icon1 {
+    background-image: url("./icons/pressureicon1.png");
+    width: 32px;
+    height: 32px;
+}
+#icon2 {
+    background-image: url("./icons/pressureicon1.png");
+    width: 32px;
+    height: 32px;
+}
+#icon3 {
+    background-image: url("./icons/pressureicon1.png");
+    width: 32px;
+    height: 32px;
+}
+@media screen and (max-width: 950px) {
+    div[class="weathercard"] {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 630px) {
+    div[class="thirdwrap"] {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    div[class="fourthwrap"] {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    div[class="weatherCL"] {
+        font-size: 40px;
+    }
+    div[class="temperatureCL"] {
+        font-size: 50px;
+    }
+    div[class="secondwrap"] {
+        flex-direction: column;
+        align-items: center;
+    }
+    div[class="maintextCL"] {
+        font-size: 50px;
+    }
+    div[class="subwrap"] {
+        margin-top: 40px;
+    }
+}

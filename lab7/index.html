@@ -4,9 +4,71 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
         <title>Lab7</title>
     </head>
     <body>
+        <div class="headWrap">
+            <image src="./icons/logo.png" class="logoimage"></image>
+            <div class="searchwrap">
+                <input type="search" id="search" class="searchCL" />
+                <button class="searchbutton" onclick="main()">Найти</button>
+            </div>
+        </div>
+        <div class="mainWrap">
+            <div class="weathercard">
+                <div id="maintext" class="maintextCL"></div>
+                <div class="secondwrap">
+                    <div id="temperature" class="temperatureCL"></div>
+                    <div id="weather" class="weatherCL"></div>
+                    <div id="weathericon"></div>
+                </div>
+                <div class="thirdwrap">
+                    <div class="windwrap">
+                        <div class="windicon"></div>
+                        <div id="wind"></div>
+                    </div>
 
+                    <div class="humiditywrap">
+                        <div class="humidityicon"></div>
+                        <div id="humidity"></div>
+                    </div>
+
+                    <div class="pressurewrap">
+                        <div class="pressureicon"></div>
+                        <div id="pressure"></div>
+                    </div>
+                </div>
+                <div class="fourthwrap">
+                    <div class="subwrap">
+                        <div id="date1"></div>
+                        <div class="subwrap1">
+                            <div id="temperature1"></div>
+                            <div id="weather1"></div>
+                        </div>
+
+                        <div id="icon1"></div>
+                    </div>
+                    <div class="subwrap">
+                        <div id="date2"></div>
+                        <div class="subwrap1">
+                            <div id="temperature2"></div>
+                            <div id="weather2"></div>
+                        </div>
+
+                        <div id="icon2"></div>
+                    </div>
+                    <div class="subwrap">
+                        <div id="date3"></div>
+                        <div class="subwrap1">
+                            <div id="temperature3"></div>
+                            <div id="weather3"></div>
+                        </div>
+                        <div id="icon3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
     </body>
 </html>
