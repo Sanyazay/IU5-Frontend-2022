@@ -1,0 +1,87 @@
+#firstobject{
+    width:12vw;
+    height:12vw;
+    background: #6495ed;
+    
+}
+.wrap{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#secondobject{
+    width:12vw;
+    height:12vw;
+    background: #6495ed;
+    
+    font-size:5vw;
+    text-align: center;
+    vertical-align: middle;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+#thirdobject{
+    width:800px;
+    height:800px;
+    background: #6495ed;
+    border-width:0px;
+    border-style:solid;
+    border-color:black;
+}
+#secondwrap{
+    width:600px;
+    background-color: #6495ed;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.item-hidden{
+    max-height: 0px;
+	transition: .2s;
+	overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    width:600px;
+}
+.item-show{
+    max-height: 200px;
+	transition: .2s;
+	overflow-y: scroll;
+    
+    
+}
+#openlistbutton{
+    background-color:rgb(167, 163, 157);
+    padding:10px;
+    font-size:30px;
+    width:200px;
+    margin:5px;
+    border-radius: 5px;
+}
+.item{
+    background-color:antiquewhite;
+    padding:10px;
+    font-size:30px;
+    width:200px;
+    margin:5px;
+    border-radius: 5px;
+}
+#d21{
+    width: 100px; 
+    height: 100px;
+    background: #08fc00;
+    border-radius: 50%;
+    position:relative;
+}
+
+.episode-card{
+    width:20vw;
+    background-color: #6495ed;
+}
