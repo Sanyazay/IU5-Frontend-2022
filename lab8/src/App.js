@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Hcomponent from './Hcomponent';
+import React, { useState } from "react";
+
 
 function App() {
+  const [value, setValue] = useState(" "); //current input value
+  const[todoList,setTodo] = useState([]); //list of todo items
+  const handleInput = event => {
+    setValue(event.target.value);
+  };
+
+  function addTodo(){
+    setTodo([...todoList, {
+      id: Date.now(),
+      //completed: false,
+      title: value
+    }])
+    
+  };
+  
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input onChange={handleInput} placeHolder='111222'/>
+      <button onClick={addTodo}>PressMe</button>
+      <todoItem />
     </div>
   );
 }
