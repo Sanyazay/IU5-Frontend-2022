@@ -11,7 +11,7 @@ function App() {
   };
 
   function addTodo(){
-    if(value !=''){
+    if(value !==''){
       setTodo([...todoList, {
         id: Date.now(),
         title: value
@@ -21,7 +21,7 @@ function App() {
     
   };
   function deleteTodo(id){
-    setTodo(todoList.filter((elem)=>elem.id != id))
+    setTodo(todoList.filter((elem)=>elem.id !== id))
     console.log(id)
     console.log(todoList)
     
