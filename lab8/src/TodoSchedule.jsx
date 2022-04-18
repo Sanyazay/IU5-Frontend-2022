@@ -6,7 +6,7 @@ export default function TodoSchedule(props){
     return(
         <div className='todoWrap'>
             {props.todoListValue.map((x)=>{
-                return <TodoItem title={x.title} uniqKey={x.id}  delete={props.deleteAction}/>
+                return <TodoItem item={x}  deletef={props.deleteAction} changef={props.changeAction}/>
             })}
         </div>
     )

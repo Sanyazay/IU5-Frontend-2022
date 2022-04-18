@@ -20,10 +20,19 @@ function App() {
     
     
   };
+  function changeValue(id,inputvalue){
+    setTodo(
+      todoList.map((item) => {
+          if (item.id === id) {
+              item.title = inputvalue;
+          }
+          return item;
+      })
+  );
+  }
   function deleteTodo(id){
     setTodo(todoList.filter((elem)=>elem.id !== id))
-    console.log(id)
-    console.log(todoList)
+    
     
   };
   
@@ -34,7 +43,7 @@ function App() {
           <input onChange={handleInput} className='mainInput' />
           <button className='addButton' onClick={addTodo}>ADD</button>
         </div>
-        <TodoSchedule todoListValue={todoList} deleteAction={deleteTodo}  />
+        <TodoSchedule  todoListValue={todoList} deleteAction={deleteTodo} changeAction={changeValue} />
       </div>
     </div>
   );
