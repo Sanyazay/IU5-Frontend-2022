@@ -1,30 +1,41 @@
 import './App.css';
-import Hcomponent from './Hcomponent';
+import TodoSchedule from './TodoSchedule';
 import React, { useState } from "react";
 
 
 function App() {
-  const [value, setValue] = useState(" "); //current input value
-  const[todoList,setTodo] = useState([]); //list of todo items
+  const [value, setValue] = useState(" ");
+  const[todoList,setTodo] = useState([]);
   const handleInput = event => {
     setValue(event.target.value);
   };
 
   function addTodo(){
-    setTodo([...todoList, {
-      id: Date.now(),
-      //completed: false,
-      title: value
-    }])
+    if(value !=''){
+      setTodo([...todoList, {
+        id: Date.now(),
+        title: value
+      }]);
+    }
+    
+    
+  };
+  function deleteTodo(id){
+    setTodo(todoList.filter((elem)=>elem.id !== id))
+    console.log(id)
+    console.log(todoList)
     
   };
   
-  
   return (
     <div className="App">
-      <input onChange={handleInput} placeHolder='111222'/>
-      <button onClick={addTodo}>PressMe</button>
-      <todoItem />
+      <div className='superMainWrap'>
+        <div className='mainWrap'>
+          <input onChange={handleInput} className='mainInput' />
+          <button className='addButton' onClick={addTodo}>ADD</button>
+        </div>
+        <TodoSchedule todoListValue={todoList} deleteAction={deleteTodo}  />
+      </div>
     </div>
   );
 }
