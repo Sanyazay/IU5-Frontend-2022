@@ -5,7 +5,7 @@ export default function TodoItem(props){
     
     
     function changeClass(){
-        if(cross.length == 1){
+        if(cross.length === 1){
             setCross([...cross,'crossed'])
         }else{
             setCross(['inputTask'])

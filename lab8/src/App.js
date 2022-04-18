@@ -21,7 +21,7 @@ function App() {
     
   };
   function deleteTodo(id){
-    setTodo(todoList.filter((elem)=>elem.id !== id))
+    setTodo(todoList.filter((elem)=>elem.id != id))
     console.log(id)
     console.log(todoList)
     
