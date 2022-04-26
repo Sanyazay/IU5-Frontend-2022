@@ -16,7 +16,7 @@ export default function TodoItem({item,deletef,changef}){
     return(
         <div >
             <input type='checkbox' onChange={()=>{changeClass()}} className='checkBox' />
-            <input type='text' value={item.title} onChange={()=>changef(item.id,item.title)}  className={cross.join(' ')}/>
+            <input type='text' value={item.title} onChange={(e)=>changef(item.id,e.target.value)}  className={cross.join(' ')}/>
             <button onClick={()=>{deletef(item.id)}} className='delButton'>DEL</button>
         </div>
     )
