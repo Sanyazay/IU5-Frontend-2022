@@ -1,38 +1,104 @@
-.App {
-    text-align: center;
+html{
+    background-color: rgb(0, 0, 0);
+    
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
+.searchMenuWrapF{
+    display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20vh;
+}
+
+.searchMenuWrapS{
+    display:flex;
+    margin-top:50px;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
 }
-
-.App-link {
-    color: #61dafb;
+.gitHubLogo{
+    width:120px;
+    height: 120px;
 }
-
-@keyframes App-logo-spin {
+.gitHubLogoLoad{
+    width:120px;
+    height: 120px;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+      transform: rotate(359deg);
     }
+  }
+
+.searchInput:focus{
+    outline:none;
+}
+.searchInput{
+    background-color: rgb(255, 255, 255);
+    border: 0px solid #5f5f5f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size:18px;
+    color:#000000;
+    width:30vh;
+    font-family: 'Roboto';
+}
+.searchButton{
+    margin-left: 20px;
+    font-family: 'Roboto';
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #5f5f5f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size:18px;
+    color:#000000;
+}
+.userAvatar{
+    border-radius: 230px;
+    width: 230px;
+    height:230px;
+}
+.UserPageWrapF{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+.userPropertiesWrap{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:230px;
+    margin-top: 20px;
+}
+.userProperties{
+    font-size: 25px;
+    color: rgb(253, 253, 253);
+    font-family: 'Roboto';
+}
+.backButton{
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #554d4d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size:18px;
+    color:#000000;
+    margin-top: 20px;
+    font-family: 'Roboto';
+}
+.errorBackButton{
+    
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #554d4d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size:18px;
+    color:#000000;
+    
+    font-family: 'Roboto';
+    margin-top:50px;
 }
